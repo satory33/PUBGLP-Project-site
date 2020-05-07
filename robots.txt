@@ -1,0 +1,7 @@
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^(.*)$ https://pubglp.ru/$1 [R=301,L]
+
+User-agent: * 
+Disallow: / 
+
+Host: https://pubglp.ru
